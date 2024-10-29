@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/RepairTracking_db?createDatabaseIfNotExist=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  #create-drop, update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8081
